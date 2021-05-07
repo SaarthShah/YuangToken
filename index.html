@@ -13,8 +13,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -42,15 +41,51 @@
         <a href="https://www.saarthshah.cf"><div class="btn"><button class="bu" id="bt2"><h2>BUY ON PANCAKE</h2></button></div></a>
         </div>
         <img src="images/fog-2640.png" id="fog">
-    </section>
 
-    <section id="about">
-        <div id="left" class="animate__fadeInUp">
+    </section>
+    <section id="aboutus">
+        <div id="leftw" class="animate__animated animate__fadeInUp">
             <h1 id="aboutheading">What is a Yuang token?</h1>
             <h2 id="abouttext">The main idea behind FEG is to provide a decentralised transaction network which operates on the Ethereum blockchain and the Binance smart chain (BSC). The path forward for FEG is determined by market fluctuations, but the model it runs on begs FEG to succeed.
                                 <br><br>FEG is a deflationary token with a max circulating supply of 100 Quadrillion. On each transaction, a tax of 1% will be distributed to the holders and a further 1% will be burnt, hence incentivizing holders to hodl and decreasing the supply overtime. As the supply decreases, the scarcity of the token increases. This inversely-proportional relationship constitutes a supply and demand model. Furthermore, there is no limit as to how many tokens can be burnt. Without a burning limit you know what happens next.</h2>
         </div>
 
+        <div id="rightw"  class="animate__animated animate__fadeInUp">
+            <div id="box1">
+                <div id="box">
+                    <span>
+                        <div id="redline"></div></span>
+                    <div id="contents">
+                    <img src="images/fast.png">
+                    <h3>Fair launch</h3>
+                    <p>Polkamoon has been stealth launched and liquidity has been locked.</p></div>
+                </div>
+                <div id="box">
+                    <span></span>
+                    <div id="contents">
+                    <img src="images/safe.png">
+                    <h3>Fair launch</h3>
+                    <p>Each time a Polkamoon is transferred, 15% of the transaction is destroyed. Another 5% is spread to the community.</p></div>
+                </div>
+            </div>
+
+            <div id="box2">
+                <div id="box">
+                    <span></span>
+                    <div id="contents">
+                    <img src="images/decentralized.png">
+                    <h3>Fair launch</h3>
+                    <p>Polkamoon aims to be a community led project.</p></div>
+                </div>
+                <div id="box">
+                    <span></span>
+                    <div id="contents">
+                    <img src="images/price.png">
+                    <h3>Fair launch</h3>
+                    <p>Supply will continue to burn with every transaction. The price is sure to increase. The Uniswap PMOON/ETH pool is forever creating an ever rising price floor..</p></div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -66,10 +101,61 @@
 
 
     <section id='s3'>
+        <div id="market">
+<div id="oleft">
+    <h1>Current Supply</h1>
+    
 
+<div id="supply">
+
+    <div id="tleft">
+        <h2>FEGETH ON ETHEREUM</h2>
+        <h3>Burnt:<br>
+            Circulating:</h3>
+        <h2>MAX SUPPLY : 100 QUADRILLION<br>
+            PRICE :<br>
+            MARKET CAP :<br></h2>
+    </div>
+
+    <div id="tright">
+        <h2>FEGBSC ON BINANCE SMART CHAIN</h2>
+        <h3>Burnt:<br>
+            Circulating:</h3>
+        <h2>MAX SUPPLY : 100 QUADRILLION<br>
+            PRICE :<br>
+            MARKET CAP :<br></h2>
+    </div></div>
+    <div id="stext"><h5>FEG is redesigning the way decentralized finance is structured. FEG is focused on reshaping and evolving how DeFi works completely while delivering the most robust ecosystem ever designed for DeFi's much needed advancements.</h5></div>
+
+</div>
+</div>
 
     </section>
     
+<section id="audit">
+    <div id="atext">
+        <h1>Audit Completed</h1>
+    </div>
+    <div id="reports">
+        <div id="blank">
+        <div id="rimg">
+            <img src="images/report1.png" alt="" id="dimg">
+            <h4>Litepaper</h4>
+            <h5>(v1.0)</h5>
+            <a href="#"><button><img src="images/dpdf.png" id="bimg"/></button></a>
+            <h6>ENGLISH</h6>
+        </div>
+        <div id="rimg">
+            <img src="images/report2.png" alt="" id="dimg">
+            <h4>Audit</h4>
+            <h5>Solidity.finance</h5>
+            <a href="#"><button><img src="images/dpdf.png" id="bimg" /></button></a>
+            <h6>ENGLISH</h6>
+        </div>
+    </div></span>
+</section>
+
+
 <script type="text/javascript">
     let mountain= document.getElementById('mountains')
     let skyline= document.getElementById('skyline')
@@ -83,12 +169,12 @@
 
     window.addEventListener('scroll', function(){
         let value= window.scrollY;
-        mountain.style.top= alue*1.05+'px';
+        mountain.style.top=value*0.75+'px';
         skyline.style.top=value*0.5+'px';
         htext.style.marginRight= value*4+'px';
-        logo.style.opacity= 1-+window.pageYOffset/400+''
-        button1.style.opacity=1-+window.pageYOffset/300+''
-        button2.style.opacity=1-+window.pageYOffset/300+''
+        logo.style.opacity= 1-+window.pageYOffset/400+'';
+        button1.style.opacity=1-+window.pageYOffset/300+'';
+        button2.style.opacity=1-+window.pageYOffset/300+'';
         
     })
     </script>
@@ -96,16 +182,17 @@
         var scroll = new SmoothScroll('a[href*="#"]');
         speed:1000;
         speedAsDuration:true;
-        const burger =document.querySelector('.ham-burger');
-        const nav = document.querySelector('.navb');
-        const links= document.querySelector('.nav-links');
-        burger.addEventListener('click',()=>
-        {
-            nav.classList.toggle('nav-active');
-        });
-    </script>
-    <script>
-        
+
+    function isInViewport(element) {
+    const rect = element.getElementById('aboutus');
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
     </script>
 </body>
 </html>

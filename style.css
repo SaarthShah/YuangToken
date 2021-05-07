@@ -77,11 +77,11 @@ button{
     pointer-events: none;
 }
 #mountains{
-    opacity: 40%;
+    opacity:40%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100vh;
     object-fit: cover;
     pointer-events: none;
@@ -156,8 +156,10 @@ button{
     justify-content: center;
     align-items: center;
     background-color: #484A47;
+    background-image: url('images/fog2.png');
     z-index: 10;
 }
+
 
 #cryptobuttons h2{
     z-index: 1001;
@@ -190,31 +192,227 @@ button{
 }
 #s3{
     position: relative;
-    height: 100vh;
     background-color: #484A47;
+    background-image: url('images/fog2.png');
     z-index: 10;
 }
-#about{
-    
+#aboutus{
+    position: relative;
+    background-image: url('images/fog2.png');
     background-color: #484A47;
     display: flex;
 
 }
-#left{
+#leftw{
     width: 50%;
     padding: 5%;
 }
-#left h1{
-    color: rgba(190,146,34,1);
+#leftw h1{
+  background: -webkit-linear-gradient(rgba(253,194,42,1) 0%, rgba(190,146,34,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 40px;
     text-align: center;
 }
-#left h2{
-    padding-top: 20px;
+#leftw h2{
+    padding-top: 40px;
     font-size: medium;
     width: 70%;
     text-align: center;
     color: whitesmoke;
     margin-left: auto;
     margin-right: auto;
+}
+#rightw{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#box1{
+    width: 50%;
+}
+#box2{
+    margin-top: 50px;
+    width: 50%;
+}
+#box{
+    width: 80%;
+    height: 250px;
+    margin-top: 30px;
+    outline: solid 2px #FED330;
+    outline-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#contents{
+    display: inline-block;
+    width: 70%;
+}
+#box h3{
+    color:#FED330;
+}
+#box p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+#box span{
+    transition: 0.5s;
+    position: relative;
+}
+#box:hover{
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  box-shadow: 0 2px 10px #FED330;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: rotate(2.5deg);
+    }
+    
+    20%, 80% {
+      transform: rotate(0deg);
+    }
+  
+    30%, 50%, 70% {
+      transform: rotate(2.5deg);
+    }
+  
+    40%, 60% {
+      transform: rotate(0deg);
+
+    }
+  }
+
+#market{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#oleft{
+    width: 70%;
+    margin-bottom:100px;
+}
+#oleft h1{
+    background: -webkit-linear-gradient(rgba(253,194,42,1) 0%, rgba(190,146,34,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 50px;
+}
+#oleft h2{
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+    font-weight: 600;
+}
+
+#oleft h3{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #B32125;
+    text-align: center;
+}
+
+#oleft h5{
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+    font-weight: 600;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  #tleft{
+      width: 50%;
+  }
+  
+  #tright{
+    width: 50%;
+}
+#supply{
+    
+    display: flex;
+}
+#audit{
+    text-align: center;
+    position: relative;
+    background-color: #484A47;
+    background-image: url('images/fog2.png');
+    z-index: 10;
+}
+#atext{
+    background: -webkit-linear-gradient(rgba(253,194,42,1) 0%, rgba(190,146,34,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 50px;
+}
+#reports{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blank{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#rimg{
+    width: 50%;
+}
+
+#dimg:hover{
+    
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+#dimg{
+    height: 300px;
+}
+#reports span{
+    width: 60%;
+}
+#reports h4{
+    color: white;
+}
+
+#reports h5{
+    color: white;
+}
+
+#reports h6{
+    color: gray;
+}
+#reports button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 30px;
+    outline: none;
+    background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
+    color: white;
+    width: 100px;
+}
+
+#bimg{
+    width: 24px;
+    padding: 3px;
 }
