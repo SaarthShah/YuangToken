@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+   background-color: white;
+   min-height: 100vh;
+}
+a{
+    
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+}
+#header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    align-items: center;
+    z-index: 1000;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-weight: 750;
+    font-size: 18px;
+}
+
+#header ul li a{
+    color: #D20C44;
+    text-decoration: none;
+}
+#header ul li a:hover{
+    color: darkred;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero::before
+{ 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to top, #484A47, transparent);
+    z-index: 10;
+}
+/*.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}*/
+#hlogo{
+    width:250px;
+    pointer-events: none;
+}
+#mountains{
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+#skyline{
+    opacity: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+#fog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+    
+-webkit-user-drag: none;
+-khtml-user-drag: none;
+-moz-user-drag: none;
+-o-user-drag: none;
+}
+.hero h1{
+    font-size: 50vh;
+    opacity: 5%;
+    font-weight: bold;
+    mix-blend-mode: luminosity;
+}
+.hero div{
+    display: flex;
+}
+#hobjects{
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+.bu{
+    z-index: 1001;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    background: rgb(253,194,42);
+    background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
+    color: white;
+}
+
+.bu:hover{
+    background:white ;
+    color: rgba(253,194,42,1);
+    border: 2px solid  rgba(253,194,42,1);
+}
+
+.bu h2{
+    z-index: 1001;
+    font-weight: bold;
+    font-size: 18px;
+}
+.btn{
+    padding: 200px 0;
+}
+#cryptobuttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484A47;
+    z-index: 10;
+}
+
+#cryptobuttons h2{
+    z-index: 1001;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#cbtn{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+#cbtn button{
+    margin-left: 30px;
+    margin-top: 30px;
+    z-index: 1001;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
+    color: white;
+}
+#cbtn button:hover{
+    background:white ;
+    color: rgba(253,194,42,1);
+    border: 2px solid  rgba(253,194,42,1);
+}
+#s3{
+    position: relative;
+    height: 100vh;
+    background-color: #484A47;
+    z-index: 10;
+}
+#about{
+    
+    background-color: #484A47;
+    display: flex;
+
+}
+#left{
+    width: 50%;
+    padding: 5%;
+}
+#left h1{
+    color: rgba(190,146,34,1);
+    font-size: 40px;
+    text-align: center;
+}
+#left h2{
+    padding-top: 20px;
+    font-size: medium;
+    width: 70%;
+    text-align: center;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuang</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+</head>
+
+<body>
+
+
+    <section id="header">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">AUDIT</a></li>
+            <li><a href="#">ETHERSCAN</a></li>
+            <li><a href="#">WHITE PAPER</a></li>
+            <li><a href="#">BUY</a></li>
+        </ul>
+    </section>
+
+
+    <section class="hero">
+        <img src="images/mountains.png" id="mountains">
+        <img src="images/skyline.png" id="skyline">
+        <h1 id="htext">YUANG</h1>
+        <div id="hobjects">
+            <a href="https://www.saarthshah.cf"><div class="btn" >
+            <button class="bu" id="bt1"><h2>BUY ON UNISWAP</h2></button></div></a>
+        <img src="images/yuangdragon.png" id="hlogo">
+        <a href="https://www.saarthshah.cf"><div class="btn"><button class="bu" id="bt2"><h2>BUY ON PANCAKE</h2></button></div></a>
+        </div>
+        <img src="images/fog-2640.png" id="fog">
+    </section>
+
+    <section id="about">
+        <div id="left" class="animate__fadeInUp">
+            <h1 id="aboutheading">What is a Yuang token?</h1>
+            <h2 id="abouttext">The main idea behind FEG is to provide a decentralised transaction network which operates on the Ethereum blockchain and the Binance smart chain (BSC). The path forward for FEG is determined by market fluctuations, but the model it runs on begs FEG to succeed.
+                                <br><br>FEG is a deflationary token with a max circulating supply of 100 Quadrillion. On each transaction, a tax of 1% will be distributed to the holders and a further 1% will be burnt, hence incentivizing holders to hodl and decreasing the supply overtime. As the supply decreases, the scarcity of the token increases. This inversely-proportional relationship constitutes a supply and demand model. Furthermore, there is no limit as to how many tokens can be burnt. Without a burning limit you know what happens next.</h2>
+        </div>
+
+
+    </section>
+
+    <section id="cryptobuttons">
+        <div id="cbtn">
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>COINGECKO</h2></button></a>
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>CMC</h2></button></a>
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>DEXTOOLS</h2></button></a>
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>UNISWAP</h2></button></a>
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>PANCAKE</h2></button></a>
+        <a href="https://www.saarthshah.cf"><button class="cb"><h2>1INCH</h2></button></a></div>
+    </section>
+
+
+    <section id='s3'>
+
+
+    </section>
+    
+<script type="text/javascript">
+    let mountain= document.getElementById('mountains')
+    let skyline= document.getElementById('skyline')
+    let htext= document.getElementById('htext')
+    let cobjects= document.getElementById('hobjects')
+    let logo= document.getElementById('hlogo')
+    let fog= document.getElementById('fog')
+    let button1= document.getElementById('bt1')
+    let button2= document.getElementById('bt2')
+
+
+    window.addEventListener('scroll', function(){
+        let value= window.scrollY;
+        mountain.style.top= alue*1.05+'px';
+        skyline.style.top=value*0.5+'px';
+        htext.style.marginRight= value*4+'px';
+        logo.style.opacity= 1-+window.pageYOffset/400+''
+        button1.style.opacity=1-+window.pageYOffset/300+''
+        button2.style.opacity=1-+window.pageYOffset/300+''
+        
+    })
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+        speed:1000;
+        speedAsDuration:true;
+        const burger =document.querySelector('.ham-burger');
+        const nav = document.querySelector('.navb');
+        const links= document.querySelector('.nav-links');
+        burger.addEventListener('click',()=>
+        {
+            nav.classList.toggle('nav-active');
+        });
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
