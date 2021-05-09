@@ -54,7 +54,7 @@ button{
     height: 100vh;
     padding: 10px 10px;
     align-items: center;
-    z-index: 1004;
+    z-index: 1009;
 }
 
 .burger{
@@ -1535,6 +1535,13 @@ height: auto;
 
 @media(max-width:610px)
 {
+    
+
+#cbtn button{
+    width: 200px;
+    height: 50px;
+}
+
     .hero h1{
         
     font-size: 15vh;
