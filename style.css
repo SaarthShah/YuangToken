@@ -18,6 +18,22 @@ ul{
 button{
     border: none;
 }
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img{
+    height: 50px;
+    width: 50px;
+}
+
 #header{
     position: absolute;
     top: 0;
@@ -73,8 +89,15 @@ button{
     object-fit: cover;
 }*/
 #hlogo{
-    width:250px;
+    width:280px;
     pointer-events: none;
+    
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
 }
 #mountains{
     opacity:40%;
@@ -156,7 +179,8 @@ button{
     justify-content: center;
     align-items: center;
     background-color: #484A47;
-    background-image: url('images/fog2.png');
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 50px 50px #484A47 inset;
     z-index: 10;
 }
 
@@ -193,12 +217,14 @@ button{
 #s3{
     position: relative;
     background-color: #484A47;
-    background-image: url('images/fog2.png');
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
     z-index: 10;
 }
 #aboutus{
     position: relative;
-    background-image: url('images/fog2.png');
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
     background-color: #484A47;
     display: flex;
 
@@ -349,7 +375,8 @@ button{
     text-align: center;
     position: relative;
     background-color: #484A47;
-    background-image: url('images/fog2.png');
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
     z-index: 10;
 }
 #atext{
@@ -415,4 +442,637 @@ button{
 #bimg{
     width: 24px;
     padding: 3px;
+}
+
+#tokenomics{
+    text-align: center;
+    position: relative;
+    background-color: #484A47;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
+    z-index: 10;
+}
+#ttext h1{
+    background: -webkit-linear-gradient(rgba(253,194,42,1) 0%, rgba(190,146,34,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      text-align: center;
+}
+
+.piechart {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border:  #FED330 solid 2px;
+    border-style: dashed;
+  }
+  
+.js {
+    background:conic-gradient(transparent 99.9%,  #FED330 0);
+  }
+
+  .piechart:hover{
+    background-color: #C19522;
+    transition: 0.25s;
+    box-shadow: 0 2px 10px #FED330;
+  }
+
+.piechart h3{
+    color: white;
+    opacity: 0;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+.piechart:hover h3{
+    opacity: 1;
+    transition: 0.25s;
+    font-size: 12px;
+  }
+
+
+#tk{
+    width: 100%;
+    display: flex;
+}
+
+#objects{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#charth{
+    width: 50%;
+    margin-bottom: 100px;
+}
+#charte{
+    margin: 0 auto;
+}
+
+#ptext2{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#charte h4{
+    text-align: center;
+    color: grey;
+}
+
+#liqbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}   
+
+#liq{
+    width: 100%;
+}
+#per{
+    width: 100%;
+}
+
+#liqbox h3{
+    color: white;
+    font-size: 24px;
+}
+
+#liqbox h5{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+#ccenter{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#chartvar{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#t1{
+    width: 100%;
+}
+
+#t2{
+    width: 100%;
+}
+#liqcontent{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#line1{
+    margin-right: 20px;
+    width: 8px;
+    height:70px;
+    border-radius: 20px;
+    background-color: #B32125;
+}
+#item1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+#item2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titems h5{
+    color: #B32125;
+    font-size: 18px;
+}
+
+#titems h6{
+color: grey;
+}
+
+#line2{
+    margin-right: 20px;
+    width: 8px;
+    height:70px;
+    border-radius: 20px;
+    background-color: #C19522;
+}
+
+
+#titems2 h5{
+    color: #C19522;
+    font-size: 18px;
+}
+
+#titems2 h6{
+color: grey;
+}
+
+.tk2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#roadmap{
+    
+    position: relative;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
+    background-color: #484A47;
+    height: 80vh;
+}
+
+#tdiv{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rheader{
+    text-align: center;
+}
+
+#rheader h1{
+    background: -webkit-linear-gradient(rgba(253,194,42,1) 0%, rgba(190,146,34,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      text-align: center;
+}
+
+.timeline{
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;  
+    margin-top: 100px;
+    height: 380px;
+    cursor: grab;
+    
+    
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+
+.timeline::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    }
+
+
+.timeline ul{
+    text-align: center;
+    display: flex;
+
+}
+
+
+.bar{
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline ul li h3{
+    color: #B32125;
+}
+
+
+.timeline ul li p{
+    color: gray;
+    font-size: 14px;
+}
+
+#circle{
+    margin: auto;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    background:white;
+    border-radius: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle1{
+    margin: auto;
+    height: 18px;
+    width: 18px;
+    background-color: #FED330;
+    background:#FED330;
+    border-radius: 50%;
+    z-index: 3;
+}
+#ccircle{
+    margin:  auto;
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    background:grey;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#c2circle{
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+
+#circle3{
+
+    margin: auto;
+    height: 18px;
+    width: 18px;
+    background-color: #484A47;
+    background:#484A47;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:4 ;
+
+}
+
+#hline{
+    
+    height: 5px;
+    width: 280px;
+    background-color: whitesmoke;
+    background:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(12.5px);
+}
+
+#asection{
+    
+    position: relative;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 100px 100px #484A47 inset;
+    background-color: #484A47;
+    height: 100vh;
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bimage{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+}
+
+#bimage img{
+    margin: 0 auto;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+
+#bcontent{
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bimage2{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bcontent2{
+    width: 80%;
+}
+
+#bcontent2 h1{
+
+    color: #FED330;
+
+}
+
+#bcontent h3{
+    font-size: 14px;
+    color: whitesmoke;
+
+}
+
+#bcontent h4{
+    color: #C19522;
+}
+lottie-player {
+    margin: 0 auto;
+}
+
+#blottie{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+#bcard1{
+    width: 100%;
+    height: 125px;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #FED330;
+    border-style: dashed;
+}
+
+#bcards{
+    width: 70%;
+}
+
+
+
+#bcard1:hover{
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    box-shadow: 0 2px 10px #FED330;
+  }
+
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+#legalrisk{
+
+    position: relative;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 50px 50px #484A47 inset;
+    background-color: #484A47;
+    height: auto;
+    padding: 50px;
+}
+
+#dropdowns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.accordoin{
+    max-width: 80rem;
+}
+
+.accordion .contentBx{
+    position: relative;
+    padding: 2rem;
+}
+
+.accordion .contentBx .label{
+position: relative;
+padding: 10px;
+background: #C19522;
+opacity: 80%;
+color: white;
+cursor: pointer;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    background-color: #C19522;
+    opacity: 80%;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+  
+  
+  .accordion .contentBx .content::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+      }
+
+
+.accordion .contentBx.active .content{
+    height: 180px;
+    padding: 10px;
+}
+
+#usecase{
+    position: relative;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 50px 50px #484A47 inset;
+    background-color: #484A47;
+    text-align: center;
+}
+
+#usecase h1{
+    color: whitesmoke;
+    opacity: 80%;
+}
+
+
+#usecase h3{
+    color: whitesmoke;
+    opacity: 80%;
+}
+
+#usecase img{
+    margin-top: 25px;
+    height: 200px;
+    mix-blend-mode:overlay;
+    opacity: 80%;
+    margin-bottom: 25px;
+}
+
+#sbtn{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #FED330 solid 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+i{
+    font-size: 40px;
+    color: #FED330;
+}
+
+#footer{
+    
+    position: relative;
+    background-image: url('images/fog3.png');
+    box-shadow: 0 0 50px 50px #484A47 inset;
+    background-color: #484A47;
+    height: auto;
+}
+
+#footer p{
+    color:whitesmoke;
+}
+
+#mimg{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mtext{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pasa{
+    text-align: center;
+}
+
+#pasa img{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 100px;
+    opacity: 90%;
+}
+
+#disclaimer{
+    text-align: center;
+}
+
+#sbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+#media{
+    margin-left: 50px;
+    margin-right: 50px;
 }

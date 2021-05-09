@@ -11,13 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/08d994afbb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+
+    <div class="loader-container">
+        <div class="loader">
+            <img src="images/coin-2.1 (1).gif" alt="">
+        </div>
+    </div>
 
     <section id="header">
         <ul>
@@ -44,45 +52,46 @@
 
     </section>
     <section id="aboutus">
-        <div id="leftw" class="animate__animated animate__fadeInUp">
+        <div id="leftw" data-aos="fade-up">
             <h1 id="aboutheading">What is a Yuang token?</h1>
             <h2 id="abouttext">The main idea behind FEG is to provide a decentralised transaction network which operates on the Ethereum blockchain and the Binance smart chain (BSC). The path forward for FEG is determined by market fluctuations, but the model it runs on begs FEG to succeed.
                                 <br><br>FEG is a deflationary token with a max circulating supply of 100 Quadrillion. On each transaction, a tax of 1% will be distributed to the holders and a further 1% will be burnt, hence incentivizing holders to hodl and decreasing the supply overtime. As the supply decreases, the scarcity of the token increases. This inversely-proportional relationship constitutes a supply and demand model. Furthermore, there is no limit as to how many tokens can be burnt. Without a burning limit you know what happens next.</h2>
         </div>
 
-        <div id="rightw"  class="animate__animated animate__fadeInUp">
+        <div id="rightw">
             <div id="box1">
-                <div id="box">
+                <div id="box"  data-aos="fade-up">
                     <span>
                         <div id="redline"></div></span>
                     <div id="contents">
-                    <img src="images/fast.png">
+                        <div id="blottie"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_nspgeke0.json"  background="transparent"  speed="0.5"  style="width: 140px; height: 140px;"   autoplay></lottie-player></div> 
                     <h3>Fair launch</h3>
-                    <p>Polkamoon has been stealth launched and liquidity has been locked.</p></div>
+                    <p>Yuang has been stealth launched and the liquidity has been LOCKED.</p></div>
                 </div>
-                <div id="box">
+                <div id="box"  data-aos="fade-up">
                     <span></span>
                     <div id="contents">
-                    <img src="images/safe.png">
-                    <h3>Fair launch</h3>
-                    <p>Each time a Polkamoon is transferred, 15% of the transaction is destroyed. Another 5% is spread to the community.</p></div>
+                       <div id="blottie"><lottie-player src="https://assets5.lottiefiles.com/packages/lf20_fwqqmnz0.json"  background="transparent"  speed="0.5"  style="width: 70px; height: 70px;"  autoplay></lottie-player></div> 
+                    <h3>Liquidity Locked</h3>
+                    <p>Locked liquidity in the YUANG/ETH Uniswap pool for 1 month.</p></div>
                 </div>
             </div>
 
-            <div id="box2">
+            <div id="box2"  data-aos="fade-up">
                 <div id="box">
                     <span></span>
                     <div id="contents">
-                    <img src="images/decentralized.png">
-                    <h3>Fair launch</h3>
-                    <p>Polkamoon aims to be a community led project.</p></div>
+                        <div id="blottie"><lottie-player src="https://assets8.lottiefiles.com/packages/lf20_uqmha5ar.json"  background="transparent"  speed="0.5"  style="width: 70px; height: 70px;"   autoplay></lottie-player></div> 
+                    <h3>15% Burned</h3>
+                    <p>15% of the transaction is destroyed forever.  Punish quick sales!
+                    </p></div>
                 </div>
-                <div id="box">
+                <div id="box"  data-aos="fade-up">
                     <span></span>
                     <div id="contents">
-                    <img src="images/price.png">
-                    <h3>Fair launch</h3>
-                    <p>Supply will continue to burn with every transaction. The price is sure to increase. The Uniswap PMOON/ETH pool is forever creating an ever rising price floor..</p></div>
+                        <div id="blottie"><lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8v4ngimh.json"  background="transparent"  speed="0.5"  style="width: 70px; height: 70px;"  autoplay></lottie-player></div> 
+                    <h3>Decentralised</h3>
+                    <p>5% to the community <br> 3% is sent to the liquidity pool<br>  2% is split amongst Polkamoon holders, rewarding those who continue to hold.</p></div>
                 </div>
             </div>
         </div>
@@ -90,7 +99,7 @@
     </section>
 
     <section id="cryptobuttons">
-        <div id="cbtn">
+        <div id="cbtn" data-aos="fade-up">
         <a href="https://www.saarthshah.cf"><button class="cb"><h2>COINGECKO</h2></button></a>
         <a href="https://www.saarthshah.cf"><button class="cb"><h2>CMC</h2></button></a>
         <a href="https://www.saarthshah.cf"><button class="cb"><h2>DEXTOOLS</h2></button></a>
@@ -102,7 +111,7 @@
 
     <section id='s3'>
         <div id="market">
-<div id="oleft">
+<div id="oleft" data-aos="fade-up">
     <h1>Current Supply</h1>
     
 
@@ -133,20 +142,20 @@
     </section>
     
 <section id="audit">
-    <div id="atext">
+    <div id="atext" data-aos="fade-up">
         <h1>Audit Completed</h1>
     </div>
     <div id="reports">
         <div id="blank">
         <div id="rimg">
-            <img src="images/report1.png" alt="" id="dimg">
+            <img src="images/report1.png" alt="" id="dimg" data-aos="fade-up">
             <h4>Litepaper</h4>
             <h5>(v1.0)</h5>
             <a href="#"><button><img src="images/dpdf.png" id="bimg"/></button></a>
             <h6>ENGLISH</h6>
         </div>
         <div id="rimg">
-            <img src="images/report2.png" alt="" id="dimg">
+            <img src="images/report2.png" alt="" id="dimg" data-aos="fade-up">
             <h4>Audit</h4>
             <h5>Solidity.finance</h5>
             <a href="#"><button><img src="images/dpdf.png" id="bimg" /></button></a>
@@ -155,6 +164,293 @@
     </div></span>
 </section>
 
+<section id="tokenomics">
+
+    <div id="ttext" data-aos="fade-up">
+        <h1>Tokenomics</h1>
+    </div>
+<div id="objects" data-aos="fade-up">
+    <div id="tk"  >
+        <div id="ptext2">
+
+            <div id="liqbox">
+                <div id="liq"><h3>Liquidity</h3>
+                    <h5>100% (Uniswap / Pancakeswap) </h5>
+                </div>
+            </div>
+
+
+            <div id="liqcontent">
+                <div id="item1">
+            <div id="line1"></div>
+            <div id="titems">
+            <h6>Token Symbol</h4>
+            <h5>YUANG</h5></div></div>
+
+            <div id="item2">
+                <div id="line2"></div>
+                <div id="titems2">
+                <h6>Networks</h4>
+                <h5>ETH & BSC</h5></div></div>
+            </div>
+            </div>
+        </div>
+
+
+        <div id="charth">
+            <div id="charte">
+                <div id="ccenter">
+                    <div class="piechart js"> 
+            <h3>Public Listing Liquidity<br>100%</h3></div>
+        </div>
+        <div id="chartvar">
+        <h4>NO PRESALE<br>15% TEAM TOKENS LOCKED</h4></div>
+            </div>
+        </div>
+    </div></div>
+</section>
+
+<section id="roadmap">
+    <div id="rheader">
+        <h1  data-aos="fade-up" >Roadmap</h1>
+    </div>
+<div id="tdiv" data-aos="fade-up">
+    <div class="timeline">
+        <ul class="bar">
+
+            <li class="active"><h3>Q1 2021</h3><br><br><div id="hline"></div>
+                <div id="c2circle"> <div id="circle">
+                    <div id="circle1"></div>
+                </div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p>
+            </li>
+
+            <li class="active"><h3>Q1 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle1"></div></div></div>
+                <br><br>
+                <p>FEGtrack Apple Appstore listing ✔️</p>
+                <p>PASA partnership ✔️</p>
+                <p>NFT sale ✔️</p>
+                <p>FEGtrack web app ✔️</p>
+                <p>FEGshop ✔️</p>
+                <p>Goldfarm partnership ✔️</p></li>
+
+            <li class="active"><h3>Q1 2021</h3><br><br><div id="hline"></div><div id="ccircle">
+                <div id="circle"><div id="circle1"></div></div></div><br><br>
+                <p>FEGtoken pools on Goldfarm ✔️</p>
+                <p>Audit by solidity finance ✔️</p>
+                <p>FOMO partnership ✔️</p>
+                <p>FEGex staking ✔️</p>
+                <p>Smartswap idea was born ✔️</p>
+                <p>FEGex partner listings ✔️</p>
+                <p>FEGex charts ✔️</p>
+                <p>Worlds first frictionless reward faucet ✔️</p>
+                <p>Hotbit CEX listing (not planned) ✔️</p>
+                <p>FEG lottery start</p>
+            </li>
+
+            <li class="active"><h3>Q2 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>FEGex Smartswap implementation</p>
+                <p>FEGex partner listings </p>
+                <p>FEGshop design contest</p>
+                <p>FEGex auto add pairs</p>
+                <p>FEGex trading pair listing offense</p>
+                <p>FEGex CEXDEX (Bridge)</p>
+            </li>
+
+            <li class="active"><h3>Q2 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br><div id="timetext">
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></div></li>
+
+            <li class="active"><h3>Q2 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br><div id="timetext">
+                <p>Further trading pair listings</p>
+                <p>Continuous improvement of FEGex</p></div>
+            </li>
+
+            <li class="active"><h3>Q3 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></li>
+
+            <li class="active"><h3>Q3 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></li>
+
+            <li class="active"><h3>Q3 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></li>
+
+            <li class="active"><h3>Q4 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></li>
+
+            <li class="active"><h3>Q4 2021</h3><br><br><div id="hline"></div><div id="c2circle">
+                <div id="circle"><div id="circle3"></div></div></div><br><br>
+                <p>Design & Creation ✔️</p>
+				<p>Uniswap listing ✔️</p>
+				<p>TRY finance partnership ✔️</p>
+				<p>Dogira partnership ✔️</p></li>
+        </ul>
+
+    </div></div>
+
+
+</section>
+
+<section id="asection">
+    
+    <div id="rheader">
+        <h1  data-aos="fade-up" >Our Ecosystem</h1>
+    </div>
+    <div  id="banner">
+    <div id="bimage" data-aos="fade-up">
+        <img src="images/yangdragon3.png">
+    </div>
+
+    <div id="bcontent">
+        <div id="bcards">
+        <div id="bcard1" data-aos="fade-up">
+            <div id="bimage2">
+                <div id="lottie">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_nspgeke0.json"  background="transparent"  speed="0.5"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+                </div></div>
+
+                <div id="bcontent2">
+                    <h1>Fair launch</h1>
+                    <h3>Yuang has been stealth launched and the liquidity has been <br>
+                        <h4>LOCKED.</h4></h3>
+                </div>
+        </div>
+
+        <div id="bcard1" data-aos="fade-up">
+            <div id="bimage2">
+                <div id="lottie">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_fwqqmnz0.json"  background="transparent"  speed="0.5"  style="width: 70px; height: 70px;"  loop  autoplay></lottie-player>
+                </div></div>
+            
+                <div id="bcontent2">
+                    <h1>Liquidity Locked</h1>
+                    <h3>Locked liquidity in the YUANG/ETH Uniswap pool for 1 month.</h3>
+                </div>
+
+        </div>
+
+        <div id="bcard1" data-aos="fade-up">
+            <div id="bimage2">
+                <div id="lottie">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_gtpryjym.json"  background="transparent"  speed="0.5"  style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+                </div></div>
+                <div id="bcontent2">
+                    <h1>15% burned</h1>
+                    <h3>15% of the transaction is destroyed forever.  Punish quick sales!</h3>
+                </div>
+        </div>
+
+        <div id="bcard1" data-aos="fade-up">
+            <div id="bimage2">
+             <div id="lottie">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8v4ngimh.json"  background="transparent"  speed="0.5"  style="width: 70px; height: 70px;"  loop  autoplay></lottie-player>
+                </div></div>
+                <div id="bcontent2">
+                    <h1>5% to the community</h1>
+                    <h3>3% is sent to the liquidity pool.  2% is split amongst Polkamoon holders, rewarding those who continue to hold.</h3>
+                </div>
+
+        </div></div>
+
+    </div>
+
+<div></div></div>
+</section>
+
+<section id="legalrisk">
+    <div></div>
+    <div id="gapadder"></div>
+    <div id="rheader">
+        <h1  data-aos="fade-up" >Legal & Risk</h1>
+    </div>
+    <div class="accordion">
+        <div class="contentBx"  data-aos="fade-up">
+            <div class="label">LEGAL DISCLAIMER</div>
+                <div class="content">
+                    <p>
+                        The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website's content as such. The FEG team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions. By purchasing FEG, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token "as is" and is not required to provide any support or services. You should have no expectation of any form from FEG and its team. Although FEG is an community driven DeFi token for social networking and not a registered digital currency, the team strongly recommends that citizens in areas with government bans on Crypto do not purchase it because the team cannot ensure compliance with your territories regulations. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+                    </p>
+                </div>
+        </div>
+        
+        <div class="contentBx"  data-aos="fade-up">
+            <div class="label">LEGAL DISCLAIMER</div>
+                <div class="content">
+                    <p>
+                        The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website's content as such. The FEG team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions. By purchasing FEG, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token "as is" and is not required to provide any support or services. You should have no expectation of any form from FEG and its team. Although FEG is an community driven DeFi token for social networking and not a registered digital currency, the team strongly recommends that citizens in areas with government bans on Crypto do not purchase it because the team cannot ensure compliance with your territories regulations. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+                    </p>
+                </div>
+        </div>
+
+        </div></div>
+    </div>
+</section>
+
+<section id="usecase">
+    <div id="usecaseob">
+    <img src="images/cat-animation.gif">
+    <h3> "Chinese Investors Invited to help billions of Asians grow their wealth with fortune and good luck."</h3></div>
+
+</section>
+
+
+<section id="footer">
+    
+    <div id="pasa">
+        
+        <img src="images/PASALogo.png">
+        </div>
+    <div id="sbuttons">
+
+    <div id="media">
+        <div id="mimg">
+        <div id="sbtn"><a></a>
+            <i class="fab fa-telegram-plane"></i>
+        </div></a></div>
+        <div id="mtext">
+        <p>Join Our Telegram</p>
+    </div></div>
+
+    <div id="media">
+        <div id="mimg">
+        <div id="sbtn"><a></a>
+            <i class="fab fa-twitter"></i>
+        </div></div></a>
+        <div id="mtext">
+        <p>Join Our Telegram</p>
+    </div></div>
+
+
+    </div>
+    <div id="disclaimer">
+        <p>© 2021 by Yuang.com</p>
+    </div>
+</section>
 
 <script type="text/javascript">
     let mountain= document.getElementById('mountains')
@@ -182,17 +478,24 @@
         var scroll = new SmoothScroll('a[href*="#"]');
         speed:1000;
         speedAsDuration:true;
-
-    function isInViewport(element) {
-    const rect = element.getElementById('aboutus');
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const accordion= document.getElementsByClassName('contentBx');
+    for(i=0;i<accordion.length;i++)
+    {
+        accordion[i].addEventListener('click',function(){
+            this.classList.toggle('active')
+        })
+    }
+
+  </script>
+  <script>
+      $(window).on("load",function(){
+        $(".loader-container").fadeOut(1000);
+      });
+  </script>
 </body>
 </html>
