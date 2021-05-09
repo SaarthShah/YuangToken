@@ -9,7 +9,6 @@ body{
    min-height: 100vh;
 }
 a{
-    
     text-decoration: none;
 }
 ul{
@@ -19,10 +18,11 @@ button{
     border: none;
 }
 
+
 .loader-container{
     width: 100%;
     height: 100vh;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -30,12 +30,49 @@ button{
     z-index: 1002;
 }
 
-.loader{
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    background-color: white;
 }
 
+.nav-links a{
+    color: #B32125;
+    letter-spacing: 1px;
+    font-weight:600;
+}
 .loader img{
     height: 100px;
     width: 100px;
+}
+
+#header2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 10px;
+    align-items: center;
+    z-index: 1004;
+}
+
+.burger{
+    z-index: 1004;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #B32125;
+    margin: 5px;
+}
+
+nav{
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #header{
@@ -62,9 +99,11 @@ button{
     color: #D20C44;
     text-decoration: none;
 }
+
 #header ul li a:hover{
     color: darkred;
 }
+
 .hero{
     position: relative;
     width: 100%;
@@ -74,6 +113,7 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 .hero::before
 { 
     content: "";
@@ -84,18 +124,10 @@ button{
     background: linear-gradient(to top, #484A47, transparent);
     z-index: 10;
 }
-/*.hero img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}*/
+
 #hlogo{
     width:280px;
     pointer-events: none;
-    
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -103,6 +135,7 @@ button{
     margin-left: 30px;
     margin-top: 5px;
 }
+
 #mountains{
     opacity:40%;
     width: 100%;
@@ -113,6 +146,7 @@ button{
     object-fit: cover;
     pointer-events: none;
 }
+
 #skyline{
     opacity: 80%;
     width: 100%;
@@ -123,6 +157,7 @@ button{
     object-fit: cover;
     pointer-events: none;
 }
+
 #fog{
     position: absolute;
     top: 0;
@@ -137,21 +172,25 @@ button{
 -moz-user-drag: none;
 -o-user-drag: none;
 }
+
 .hero h1{
     font-size: 50vh;
     opacity: 5%;
     font-weight: bold;
     mix-blend-mode: luminosity;
 }
+
 .hero div{
     display: flex;
 }
+
 #hobjects{
     margin-top: 100px;
     position: absolute;
     top: 0;
     object-fit: cover;
 }
+
 .bu{
     z-index: 1001;
     width: 300px;
@@ -161,6 +200,27 @@ button{
     background: rgb(253,194,42);
     background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
     color: white;
+}
+
+#hbuttons{
+    z-index: 1005;
+    position: absolute;
+    bottom: 5%;
+    height: auto;
+}
+
+.bu2{
+    margin-top: 30px;
+    z-index: 1001;
+    width: 275px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    background: rgb(253,194,42);
+    background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .bu:hover{
@@ -174,9 +234,20 @@ button{
     font-weight: bold;
     font-size: 18px;
 }
+
 .btn{
     padding: 200px 0;
 }
+
+
+.btn3{
+    padding: 10px 0;
+}
+
+#hidden-buttons{
+    display: none;
+}
+
 #cryptobuttons{
     position: relative;
     display: flex;
@@ -184,10 +255,10 @@ button{
     align-items: center;
     background-color: #484A47;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 50px 50px #484A47 inset;
     z-index: 10;
 }
-
 
 #cryptobuttons h2{
     z-index: 1001;
@@ -200,8 +271,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    max-width: 100rem;
 }
+
 #cbtn button{
     margin-left: 30px;
     margin-top: 30px;
@@ -213,6 +285,7 @@ button{
     background: linear-gradient(180deg, rgba(253,194,42,1) 0%, rgba(190,146,34,1) 100%);
     color: white;
 }
+
 #cbtn button:hover{
     background:white ;
     color: rgba(253,194,42,1);
@@ -222,12 +295,14 @@ button{
     position: relative;
     background-color: #484A47;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 100px 100px #484A47 inset;
     z-index: 10;
 }
 #aboutus{
     position: relative;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 100px 100px #484A47 inset;
     background-color: #484A47;
     display: flex;
@@ -380,6 +455,7 @@ button{
     position: relative;
     background-color: #484A47;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 100px 100px #484A47 inset;
     z-index: 10;
 }
@@ -648,6 +724,7 @@ color: grey;
     
     position: relative;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 100px 100px #484A47 inset;
     background-color: #484A47;
     height: 80vh;
@@ -791,6 +868,7 @@ color: grey;
     
     position: relative;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 100px 100px #484A47 inset;
     background-color: #484A47;
     height: 100vh;
@@ -905,6 +983,7 @@ lottie-player {
 
     position: relative;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 50px 50px #484A47 inset;
     background-color: #484A47;
     height: auto;
@@ -978,6 +1057,7 @@ cursor: pointer;
 #usecase{
     position: relative;
     background-image: url('images/fog3.png');
+    background-repeat: repeat;
     box-shadow: 0 0 50px 50px #484A47 inset;
     background-color: #484A47;
     text-align: center;
@@ -1023,7 +1103,8 @@ i{
 #footer{
     
     position: relative;
-    background-image: url('images/fog3.png');
+    background-image: url('images/footerbg.png');
+    background-repeat: repeat;
     box-shadow: 0 0 50px 50px #484A47 inset;
     background-color: #484A47;
     height: auto;
@@ -1063,6 +1144,20 @@ i{
     text-align: center;
 }
 
+#inv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inv2{
+    text-align: center;
+    width: 75%;
+}
+
+#inv h3{
+    text-align: center;
+}
+
 #sbuttons{
     display: flex;
     justify-content: center;
@@ -1079,4 +1174,444 @@ html {
 #media{
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+
+@media(max-width:1450px)
+{
+#cbtn button{
+    width: 170px;
+    height: 45px;
+}
+#cryptobuttons h2{
+    font-size: 16px;
+}
+}
+
+
+@media(max-width:1250px)
+{
+#aboutus{
+    margin-top: -1px;
+}
+
+section{
+    margin-top: -1px;
+}
+
+.hero h1{
+    font-size: 45vh;
+}
+#cryptobuttons h2{
+    font-size: 14px;
+}
+#cbtn button{
+    width: 150px;
+    height: 40px;
+}
+
+#objects{
+    flex-wrap: wrap;
+
+}
+
+#tk{
+    width: 100%;
+}
+
+#charte{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#leftw h2{
+    
+    font-size: 16px;
+}
+
+#ptext2{
+    width: 100%;
+}
+
+
+#box p{
+    font-size: 12px;
+}
+
+#bimage{
+    width: 35%;
+}
+
+#bcontent{
+    width: 65%;
+}
+
+#bimage img{
+    width: 450px;
+}
+
+
+#bcontent h3{
+    font-size: 12px;
+
+}
+
+#bcontent h4{
+    font-size: 12px;
+
+}
+
+#bimage2{
+    width: 30%;
+}
+
+#bcard1{
+    height: 100px;
+}
+
+
+.accordion .contentBx.active .content{
+    height: 200px;
+    padding: 10px;
+}
+
+}
+
+
+@media(max-width:1110px)
+{
+.hero h1{
+    font-size: 40vh;
+}
+
+
+#cbtn button{
+    width: 130px;
+    height: 35px;
+}
+
+}
+
+
+@media(max-width:1000px)
+{
+.hero h1{
+    font-size: 35vh;
+}
+
+
+.accordion .contentBx.active .content{
+    height: 250px;
+    padding: 10px;
+}
+
+#cbtn{
+    flex-wrap: wrap;
+}
+
+#cbtn button{
+    width: 120px;
+    height: 30px;
+}
+
+#cbtn{
+    max-width: 50%;
+}
+
+}
+
+
+@media(max-width:920px)
+{
+.hero h1{
+    font-size: 30vh;
+   
+}
+.bu{
+    width:150px;
+}
+
+.b2 h2{
+    font-size: 10px;
+}
+
+#cryptobuttons{
+    display:flex;
+}
+
+
+#cbtn button{
+    width: 100px;
+    height: 25px;
+}
+
+#cryptobuttons h2{
+    font-size: 10px;
+}
+
+}
+
+@media(max-width:875px)
+{
+    
+    .accordion p{
+        font-size: 14px;
+    }
+
+    #aboutus{
+        flex-wrap: wrap;
+    }
+
+    #leftw{
+        width: 100%;
+    }
+    #cbtn button{
+        width: 120px;
+    }
+    
+    #rightw{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #box1{
+        width: 100%;
+    }
+    #box2{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #box{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+#bcontent h3{
+    font-size: 10px;
+
+}
+
+#asection{
+height: auto;
+}
+
+#bcontent{
+    width: 100%;
+}
+
+#bimage{
+    width: 100%;
+}
+
+
+#bimage img{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#banner{
+    flex-wrap: wrap;
+}
+
+#bcontent h4{
+    font-size: 10px;
+
+}
+
+#ccenter{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+#blank{
+    flex-wrap: wrap;
+}
+
+#dimg{
+    height: 300px;
+}
+
+#rimg{
+    width: 100%;
+}
+
+}
+
+@media(max-width:750px)
+{
+    
+.hero h1{
+    font-size: 25vh;
+   
+}
+
+
+#bcontent{
+    width: 100%;
+}
+
+
+#bcards{
+    width: 100%;
+}
+
+#header ul li{
+    font-size: 14px;
+}
+
+#header{
+    align-items: center;
+}
+
+#supply{
+    flex-wrap: wrap;
+}
+
+#tleft{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#tright{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+@media(max-width:770px){
+     
+.hero h1{
+    font-size: 20vh;
+   
+}
+}
+
+@media screen and (max-width:768px)
+{
+    #header{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100vh;
+        z-index: 1003;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 1;
+    }
+    #bsetter{
+        display: flex;
+        align-items: flex-end;
+    }
+    nav{
+        display: flex;
+        
+    }
+    #header2{
+        
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width:610px)
+{
+    .hero h1{
+        
+    font-size: 15vh;
+    }
+    
+    .hero div{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bu{
+        display: none;
+    }
+
+    #dimg{
+        height: 250px;
+    }
+    
+        #charth{
+            width: 70%;
+            margin-bottom: 100px;
+        }
+
+    #hidden-buttons{
+        display: flex;
+        justify-content:center;
+        align-items:flex-end;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:450px)
+{
+    
+#bimage2{
+    width: 25%;
+    display: none;
+}
+
+#bcard1{
+    text-align: center;
+}
+
+
+#bcard1{
+    height: 175px;
+}
+
+#bcontent2 h1{
+    font-size: medium;
+}
+
+
+#bcontent2{
+    padding: 2px;
+}
+
+#hbuttons{
+    margin-top: -1px;
+}
+    .hero h1{
+        transform: translateY(-300px);
+    font-size:10vh;
+    }
+
+    .hero div{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bu{
+        display: none;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
 }
