@@ -27,7 +27,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1002;
+    z-index: 1020;
 }
 
 .nav-links{
@@ -210,7 +210,7 @@ nav{
 }
 
 .bu2{
-    margin-top: 30px;
+    margin-top: 10px;
     z-index: 1001;
     width: 275px;
     height: 50px;
